@@ -10,15 +10,24 @@ Run npm start from root directory
 **Folder Structure**
 <ul>
   <li>src/ - Contains all of our react codebase</li>
+  <ul>
+    <li>index.jsx - Base react component</li>
+    <li>routes.js - App navigation</li>
+    <li>api/ - Api call related functions</li>
+    <li>config/ - Config files</li>
+    <li>containers/ - Smart Components</li>
+    <li>context/ - React Context</li>
+    <li>utils/ - Helper functions</li>
+    <li>components/ - Dumb Components</li>
+    <ul>
+      <li>common/ - Shared components</li>
+    </ul>
+  </ul>
 </ul>
 
-index.jsx - Base react component
-routes.js - App navigation
-api/ - Api call related functions
-assets/ - Images, fonts and other static files
-config/ - Config files
-containers/ - Smart Components
-context/ - React Context
-utils/ - Helper functions
-components/ - Dumb Components
-common/ - Shared components
+
+
+
+
+
+
