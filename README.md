@@ -1,6 +1,8 @@
 # react-template-starter
 
-Simple template bootstrapped with the necessary folder structure for react projects.
+**A simple folder structure template bootstrap for react projects.**
+
+There is no way that is 100% correct to structure your application, this is purely based on my opinions as to what I feel is comfortable. Feel free to adjust modify to your satisfaction or adopt it as is for your a project :)
 
 ## Getting Started
 
@@ -11,18 +13,31 @@ Simple template bootstrapped with the necessary folder structure for react proje
 
 ## Folder Structure
 
-* `public/` - Static files
+* `build/` - Files that are optimized and deployed for production
+* `public/` - Static files that can be accessed by the public
+* `scripts/` - Miscellaneous files and scripts
 * `src/` - Contains all of our react codebase
   * `api/` - Api call related function
   * `assets/` - Images, fonts and other static files
-  * `components/` - [Dumb Components](https://medium.com/@thejasonfile/dumb-components-and-smart-components-e7b33a698d43)
-    * `common/` - Shared components
-  * `config/` - Config files
-  * `containers/` - [Smart Components](https://medium.com/@thejasonfile/dumb-components-and-smart-components-e7b33a698d43)
+  * `components/` - [Dumb Components](https://medium.com/@thejasonfile/dumb-components-and-smart-components-e7b33a698d43), components that are given a set of props and render some data to the screen
+    * `common/` - Shared components and all other reusable components, like buttons, cards, boxes
+  * `config/` - Config files? Possibly sensitive
+  * `containers/` - [Smart Components](https://medium.com/@thejasonfile/dumb-components-and-smart-components-e7b33a698d43), components that manipulate data, connect to services and deal with user interaction
   * `context/` - [React Context](https://reactjs.org/docs/context.html)
-  * `hooks` - Classless features
-  * `pages` -
-  * `services` -
-  * `utils/` - Helper functions
-* `index.jsx` - Base react component
-* `routes.js` - App navigation
+  * `hooks/` - All reusable [hooks](https://reactjs.org/docs/hooks-intro.html) will be placed here
+  * `layout/` - Container and presentational components that represent your overall [layout structure](https://dev.to/olenadrugalya/layout-component-and-why-we-use-it-in-react-d8b) like header, main, navbar, and footer
+  * `pages/` - Pages are unique parts of your application, they group the main container component and all non-reusable presentational components
+  * `services/` - javascript function to manage API integration based on the type of data
+  * `utils/` - Helper functions (string utils, array utils, constants, etc). The utils folder is just a place to locate some utility functions that used repeatedly in the project. Files in the utils folder should only contain some functions like date formatting, string conversion, etc.
+  * `index.js` - Base react component
+  * `routes.js` - App navigation
+
+Just in case you are wondering where I would put my styles, I would recommend [modular styling](https://alligator.io/react/react-css/#modular-stylesheets), but if you are more interested in cutting edge solutions then you can deep dive into [stylized components](https://styled-components.com/docs/basics) and if you like it but already use another progressive technology like tailwind, there is no reason why you can't combine two of them, you are not alone in your desires. Here is your dream come true [tailwind-styled-components - npm (npmjs.com)](https://www.npmjs.com/package/tailwind-styled-components). I hope this helps you as it does for me. Happy coding❤️
+
+
+
+#### Source
+
+[Guidelines to improve your React folder structure — Max Rozen](https://maxrozen.com/guidelines-improve-react-app-folder-structure) 2021, accessed 24th March 2021
+
+[pcofilada/simple-react-starter: Simple ReactJS starter with an opinionated folder structure. (github.com)](https://github.com/pcofilada/simple-react-starter) 2021, accessed 24th March 2021
