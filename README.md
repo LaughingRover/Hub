@@ -2,7 +2,7 @@
 
 **A simple folder structure template bootstrap for react projects.**
 
-There is no way that is 100% correct to structure your application, this is purely based on my opinions as to what I feel is comfortable. Feel free to adjust modify to your satisfaction or adopt it as is for your a project :)
+There is no way that is 100% correct to structure your application, this is purely based on my opinions as to what I feel is comfortable. Feel free to adjust it to your satisfaction or adopt it as is for your a project :)
 
 ## Getting Started
 
@@ -13,7 +13,7 @@ There is no way that is 100% correct to structure your application, this is pure
 
 ## Folder Structure
 
-* `build/` - Files that are optimized and deployed for production
+* `build/` - Files that are optimized and deployed for production (Create it as needed)
 * `public/` - Static files that can be accessed by the public
 * `scripts/` - Miscellaneous files and scripts
 * `src/` - Contains all of our react codebase
@@ -29,15 +29,19 @@ There is no way that is 100% correct to structure your application, this is pure
   * `pages/` - Pages are unique parts of your application, they group the main container component and all non-reusable presentational components
   * `services/` - javascript function to manage API integration based on the type of data
   * `utils/` - Helper functions (string utils, array utils, constants, etc). The utils folder is just a place to locate some utility functions that used repeatedly in the project. Files in the utils folder should only contain some functions like date formatting, string conversion, etc.
+  * `App.js` - Application Entry point
+  * `App.test.js` - unit test for
   * `index.js` - Base react component
-  * `routes.js` - App navigation
+  * `routes.js` - App navigation (create it as need)
 
-Just in case you are wondering where I would put my styles, I would recommend [modular styling](https://alligator.io/react/react-css/#modular-stylesheets), but if you are more interested in cutting edge solutions then you can deep dive into [stylized components](https://styled-components.com/docs/basics) and if you like it but already use another progressive technology like tailwind, there is no reason why you can't combine two of them, you are not alone in your desires. Here is your dream come true [tailwind-styled-components - npm (npmjs.com)](https://www.npmjs.com/package/tailwind-styled-components). I hope this helps you as it does for me. Happy coding❤️
-
-
+Just in case you are wondering where I would put my styles, I would recommend [modular styling](https://alligator.io/react/react-css/#modular-stylesheets), but if you are more interested in cutting edge solutions then you can deep dive into [stylized components](https://styled-components.com/docs/basics) and if you like it but already use another progressive technology like tailwind, there is no reason why you can't combine both of them, here is a solution for you [tailwind-styled-components - npm (npmjs.com)](https://www.npmjs.com/package/tailwind-styled-components). I hope this helps you as it does for me. Happy coding❤️
 
 #### Source
+
+---
 
 [Guidelines to improve your React folder structure — Max Rozen](https://maxrozen.com/guidelines-improve-react-app-folder-structure) 2021, accessed 24th March 2021
 
 [pcofilada/simple-react-starter: Simple ReactJS starter with an opinionated folder structure. (github.com)](https://github.com/pcofilada/simple-react-starter) 2021, accessed 24th March 2021
+
+[Domain-driven design - Wikipedia](https://en.wikipedia.org/wiki/Domain-driven_design) 2021, accessed 25th March 2021
