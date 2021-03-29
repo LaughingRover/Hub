@@ -6,7 +6,6 @@ export const LoginHeader = () => {
 	return (
 		<div>
 			<NavLink to='/' ><Logo /></NavLink>
-			<NavLink to='/signin' >SIGN IN</NavLink>
 		</div>
 	)
 };

@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+
 import { Nav } from './layout/Navigation'
 import Home from './pages/landingPage/LandingPage'
 import Exhibition from './pages/exhibition/Exhibition'

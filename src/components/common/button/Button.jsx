@@ -3,9 +3,9 @@ import styled, { css } from 'styled-components';
 import { Colors } from '../../../utils/Colors'
 
 const Button = styled.button`
-	width: 5.5rem;
-	padding: 0.7rem 0.9rem;
-	font-size: 0.65rem;
+	width: 6rem;
+	padding: 0.8rem 1rem;
+	font-size: 0.7rem;
 	text-align: center;
 	color: white;
 	text-decoration: none;
@@ -18,20 +18,26 @@ const Button = styled.button`
   &:focus,  
   &:hover {
     cursor: pointer;
-		color: ${Colors.hover};
+		background: ${Colors.hover};
   }
 
-	${props => props.primary && css`
-		padding: 0.6rem;
-		width: 7rem
+	${({primary}) => primary && css`
+		padding: 1rem;
+		width: 100%;
+		font-size: 1rem;
+		font-weight: bold;
 		border-radius: 4px;
-    background-color: ${Colors.torquoise};
+    background: ${Colors.hover};
+
+		&:hover {
+			background: ${Colors.torquoise}
+		}
   `};
 `;
 
 export const StyledButton = (props) => {
 	return (
-		<Button type={props.type}>
+		<Button type={props.type} {...props}>
 			{props.children}
 		</Button>
 	)
